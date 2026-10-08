@@ -1,53 +1,63 @@
-import img1 from "@/assets/casaria-1.jpg.asset.json";
-import img2 from "@/assets/casaria-2.jpg.asset.json";
-import img3 from "@/assets/casaria-3.jpg.asset.json";
-import img4 from "@/assets/casaria-4.jpg.asset.json";
-
-/**
- * WHATSAPP — PREENCHER AQUI.
- * Apenas dígitos, com DDI + DDD. Ex.: "5511999999999".
- * Enquanto vazio, os botões exibem "Contato em configuração."
- */
-export const WHATSAPP_NUMBER = "";
-
+export const WHATSAPP_NUMBER: string = "";
 export const WHATSAPP_MESSAGE =
   "Olá! Gostaria de conversar sobre um projeto em madeira maciça. Posso enviar minhas referências?";
-
-export const whatsappUrl = (): string | null =>
-  WHATSAPP_NUMBER.trim()
-    ? `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, "")}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
-    : null;
-
 export const CTA_LABEL = "Conversar sobre meu projeto";
-
+export function whatsappUrl(): string | null {
+  const number = WHATSAPP_NUMBER.replace(/\D/g, "");
+  return number
+    ? `https://wa.me/${number}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
+    : null;
+}
 export const images = {
   fachada: {
-    src: img1.url,
-    alt: "Fachada de café com revestimento em madeira maciça e deck",
-    caption: "Casaria Café — fachada e materialidade",
+    src: "/images/casaria-fachada.jpg",
+    alt: "Fachada do Casaria Café com madeira e flores",
   },
-  interior: { src: img2.url, alt: "Balcão em madeira maciça com iluminação inferior" },
-  detalhe: { src: img3.url, alt: "Detalhe dos veios da madeira na fachada" },
-  banco: { src: img4.url, alt: "Banco suspenso por correntes e pequena mesa em madeira" },
+  interior: {
+    src: "/images/casaria-interior.jpg",
+    alt: "Interior do Casaria Café com balcão de madeira iluminado",
+  },
+  detalhe: {
+    src: "/images/casaria-detalhe.jpg",
+    alt: "Textura e veios da madeira na fachada do Casaria Café",
+  },
+  banco: {
+    src: "/images/casaria-banco.jpg",
+    alt: "Banco suspenso por correntes com mesa de madeira na lateral",
+  },
+  instalacao: {
+    src: "/images/casaria-instalacao.jpg",
+    alt: "Balcão de madeira durante a instalação no ambiente",
+  },
 };
-
-/** Galeria editorial: imagem principal + duas menores empilhadas à direita. */
-export const gallery = {
-  main: { ...images.interior, caption: "Interior com balcão em madeira maciça" },
-  side: [
-    { ...images.detalhe, caption: "Veios da madeira na fachada" },
-    { ...images.banco, caption: "Banco suspenso e mesa" },
-  ],
-};
-
 export const features = [
-  { title: "Madeira maciça", text: "Veios e texturas naturais que dão identidade a cada peça." },
-  { title: "Sob medida", text: "Dimensões e detalhes definidos a partir das necessidades do seu espaço." },
-  { title: "Atenção aos detalhes", text: "Cuidado com as proporções, os encontros e o acabamento." },
+  {
+    title: "Madeira de verdade.",
+    text: "Veios, tons e texturas naturais. A singularidade do material como parte do desenho de cada peça.",
+  },
+  {
+    title: "Um olhar sob medida.",
+    text: "Proporções e detalhes pensados a partir da sua ideia e das necessidades do ambiente.",
+  },
+  {
+    title: "Cuidado que aparece.",
+    text: "Atenção aos encontros, ao desenho e ao acabamento. O detalhe participa do resultado.",
+  },
 ];
-
 export const steps = [
-  { n: "01", title: "Conte sua ideia", text: "Compartilhe o tipo de projeto, referências, medidas aproximadas e sua cidade." },
-  { n: "02", title: "Alinhamos os detalhes", text: "Conversamos sobre possibilidades, materiais e escopo para definir a proposta." },
-  { n: "03", title: "Produção e entrega", text: "A execução segue as condições e os detalhes aprovados para o projeto." },
+  {
+    n: "01",
+    title: "Compartilhe sua ideia",
+    text: "Conte o que deseja criar. Referências, medidas aproximadas e sua cidade ajudam a começar.",
+  },
+  {
+    n: "02",
+    title: "Alinhamos as escolhas",
+    text: "Conversamos sobre materiais, desenho e escopo para definir a proposta e as condições.",
+  },
+  {
+    n: "03",
+    title: "Damos forma ao projeto",
+    text: "Produção e entrega seguem os detalhes e as condições aprovadas para o seu projeto.",
+  },
 ];
