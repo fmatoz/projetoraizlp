@@ -248,7 +248,7 @@ export default function App() {
         <a href="#inicio" aria-label="Voltar ao início">
           <Brand />
         </a>
-        <p>Madeira natural. Um olhar sob medida.</p>
+        <div className="footer-credit"><p>Madeira natural. Um olhar sob medida.</p><a href="https://www.gestaom7.com.br" target="_blank" rel="noopener noreferrer">Feito pela Gestão M7</a></div>
         <a href="#inicio">
           VOLTAR AO TOPO <ArrowUpRight size={15} />
         </a>
@@ -264,4 +264,6 @@ export default function App() {
     </>
   );
 }
+
+
 
