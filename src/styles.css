@@ -1322,3 +1322,243 @@ details > p {
     font-size: 54px;
   }
 }
+/* Premium carousel and compact first fold. */
+.header-inner {
+  height: 84px;
+}
+.hero,
+.hero-inner {
+  min-height: 600px;
+}
+.hero-copy {
+  width: 57%;
+  max-width: 680px;
+  padding: 36px 0 75px;
+}
+.hero h1 {
+  font-size: clamp(50px, 4.6vw, 68px);
+  line-height: 1.03;
+}
+.hero-description {
+  max-width: 450px;
+  margin: 20px 0 24px;
+}
+.hero-bottom {
+  bottom: 23px;
+}
+.section {
+  padding-block: 65px;
+}
+.project-heading {
+  margin-top: 20px;
+}
+.project-heading h2 {
+  font-size: clamp(40px, 3.6vw, 54px);
+}
+.carousel-track {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+.carousel-slide {
+  flex: 0 0 76%;
+  min-width: 0;
+  scroll-snap-align: start;
+}
+.carousel-slide .gallery-photo {
+  height: 470px;
+}
+.carousel-slide figcaption {
+  margin-top: 12px;
+}
+.carousel-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+.carousel-dots {
+  display: flex;
+  gap: 2px;
+}
+.carousel-dots button {
+  border: 0;
+  background: transparent;
+  padding: 16px 9px;
+  width: 32px;
+  height: 44px;
+}
+.carousel-dots span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c3c7b7;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.carousel-dots button[aria-current="true"] span {
+  background: #46563c;
+  transform: scale(1.25);
+}
+.carousel-count {
+  font-size: 11px;
+  color: #67735b;
+  letter-spacing: 0.12em;
+}
+.carousel-actions {
+  display: flex;
+  gap: 8px;
+}
+.carousel-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid #c6cabd;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.carousel-actions button:hover {
+  background: #e4e8da;
+  border-color: #6a775c;
+}
+.carousel-track:focus-within .gallery-photo:focus-visible {
+  outline-offset: -5px;
+  outline-color: #fff;
+}
+.contact-inner {
+  padding-block: 68px;
+}
+.contact .cta {
+  min-height: 58px;
+  padding-inline: 28px;
+  font-size: 14px;
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .header-inner {
+    height: 76px;
+  }
+  .nav {
+    gap: 18px;
+    font-size: 12px;
+  }
+  .nav .nav-contact {
+    margin-left: 0;
+    gap: 10px;
+    padding: 12px;
+  }
+  .hero h1 {
+    font-size: 49px;
+  }
+  .hero-copy {
+    padding-top: 30px;
+  }
+  .hero-description {
+    font-size: 15px;
+    max-width: 360px;
+  }
+  .carousel-slide {
+    flex-basis: 82%;
+  }
+  .carousel-slide .gallery-photo {
+    height: 400px;
+  }
+}
+@media (max-width: 760px) {
+  .header-inner {
+    height: 74px;
+  }
+  .nav-open {
+    top: 74px;
+  }
+  .hero,
+  .hero-inner {
+    min-height: 0;
+  }
+  .hero-copy {
+    width: 100%;
+    padding: 27px 0 24px;
+  }
+  .hero h1 {
+    font-size: clamp(35px, 8.8vw, 49px);
+    margin-top: 16px;
+  }
+  .hero-description {
+    font-size: 14px;
+    margin: 18px 0 20px;
+  }
+  .hero .cta {
+    font-size: 12px;
+    padding-inline: 16px;
+    gap: 14px;
+  }
+  .hero .eyebrow {
+    font-size: 9px;
+  }
+  .hero-note {
+    font-size: 11px;
+  }
+  .hero-bottom {
+    padding-block: 16px;
+  }
+  .hero-photo {
+    height: 290px;
+  }
+  .section {
+    padding-block: 44px;
+  }
+  .project-heading h2 {
+    font-size: 37px;
+  }
+  .carousel-track {
+    gap: 16px;
+  }
+  .carousel-slide {
+    flex-basis: 92%;
+  }
+  .carousel-slide .gallery-photo {
+    height: 345px;
+  }
+  .carousel-toolbar {
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .carousel-dots button {
+    width: 27px;
+    padding-inline: 9px;
+  }
+  .carousel-actions {
+    gap: 5px;
+  }
+  .carousel-count {
+    font-size: 9px;
+    letter-spacing: 0.05em;
+  }
+  .contact-inner {
+    padding-block: 48px;
+  }
+  .contact .cta {
+    font-size: 11px;
+    padding-inline: 17px;
+    gap: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track {
+    scroll-behavior: auto;
+  }
+}
