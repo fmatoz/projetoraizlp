@@ -1,7 +1,7 @@
 export const WHATSAPP_NUMBER: string = "";
 export const WHATSAPP_MESSAGE =
-  "Olá! Gostaria de conversar sobre um projeto em madeira maciça. Posso enviar minhas referências?";
-export const CTA_LABEL = "Conversar sobre meu projeto";
+  "Olá! Conheci a Projeto Raiz pelo site e gostaria de conversar sobre um projeto em madeira maciça.";
+export const CTA_LABEL = "Solicitar meu orçamento";
 export function whatsappUrl(): string | null {
   const number = WHATSAPP_NUMBER.replace(/\D/g, "");
   return number
@@ -32,32 +32,32 @@ export const images = {
 };
 export const features = [
   {
-    title: "Madeira de verdade.",
-    text: "Veios, tons e texturas naturais. A singularidade do material como parte do desenho de cada peça.",
+    title: "A beleza da madeira natural",
+    text: "Veios, cores e texturas que tornam cada criação especial. A autenticidade da madeira maciça em cada detalhe.",
   },
   {
-    title: "Um olhar sob medida.",
-    text: "Proporções e detalhes pensados a partir da sua ideia e das necessidades do ambiente.",
+    title: "Feito para o seu espaço",
+    text: "Projetos personalizados que consideram suas ideias, necessidades e as características do ambiente.",
   },
   {
-    title: "Cuidado que aparece.",
-    text: "Atenção aos encontros, ao desenho e ao acabamento. O detalhe participa do resultado.",
+    title: "Cuidado em cada acabamento",
+    text: "Da escolha dos materiais aos detalhes finais, buscamos unir estética, funcionalidade e qualidade de execução.",
   },
 ];
 export const steps = [
   {
     n: "01",
-    title: "Compartilhe sua ideia",
-    text: "Conte o que deseja criar. Referências, medidas aproximadas e sua cidade ajudam a começar.",
+    title: "Conte o que você imagina",
+    text: "Compartilhe sua ideia, referências e as necessidades do seu espaço.",
   },
   {
     n: "02",
-    title: "Alinhamos as escolhas",
-    text: "Conversamos sobre materiais, desenho e escopo para definir a proposta e as condições.",
+    title: "Planejamos os detalhes",
+    text: "Conversamos sobre materiais, dimensões, acabamento e investimento para definir a proposta.",
   },
   {
     n: "03",
-    title: "Damos forma ao projeto",
-    text: "Produção e entrega seguem os detalhes e as condições aprovadas para o seu projeto.",
+    title: "Transformamos em realidade",
+    text: "Com o projeto alinhado, seguimos para a execução conforme as condições combinadas.",
   },
 ];

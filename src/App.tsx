@@ -1,20 +1,21 @@
 import { useState } from "react";
 import { ArrowDown, ArrowUpRight, Menu, X, Plus } from "lucide-react";
+import { PhotoGallery } from "./components/PhotoGallery";
 import { CtaButton } from "./components/CtaButton";
 import { images, steps, features } from "./config/site";
 
 const questions = [
   [
-    "O que preciso enviar para começar?",
-    "Uma breve descrição da sua ideia, referências visuais, medidas aproximadas e a cidade do projeto já ajudam a iniciar a conversa.",
+    "Quais tipos de projetos vocês realizam?",
+    "Trabalhamos com projetos personalizados em madeira maciça. Conte sua ideia para avaliarmos as possibilidades.",
   ],
   [
-    "Como são definidos o investimento e o prazo?",
-    "Cada proposta considera dimensões, material, acabamento, complexidade e condições de entrega. Esses pontos são alinhados antes da aprovação.",
+    "Preciso ter todas as medidas antes de entrar em contato?",
+    "Não necessariamente. Você pode começar compartilhando sua ideia e as informações que já possui.",
   ],
   [
-    "Posso conversar sobre uma solução sob medida?",
-    "Sim. Compartilhe o ambiente e o que você deseja criar para conversarmos sobre as possibilidades e o escopo.",
+    "Como funciona o orçamento?",
+    "Primeiro entendemos o que você deseja. A partir disso, conversamos sobre materiais, detalhes, valores e prazos.",
   ],
 ];
 
@@ -45,7 +46,7 @@ export default function App() {
             aria-label="Navegação principal"
           >
             {[
-              ["#projeto", "O projeto"],
+              ["#projeto", "Portfólio"],
               ["#essencia", "Nossa essência"],
               ["#processo", "Como funciona"],
             ].map(([href, label]) => (
@@ -53,13 +54,11 @@ export default function App() {
                 {label}
               </a>
             ))}
-            <a
+            <CtaButton
               className="nav-contact"
-              href="#contato"
-              onClick={() => setMenu(false)}
-            >
-              Seu projeto <ArrowUpRight size={16} />
-            </a>
+              variant="outline"
+              label="Solicitar orçamento"
+            />
           </nav>
           <button
             className="menu-button"
@@ -87,22 +86,19 @@ export default function App() {
           <div className="shell hero-inner">
             <div className="hero-copy">
               <p className="eyebrow">
-                <span /> A NATUREZA COMO MATÉRIA-PRIMA
+                MARCENARIA EM MADEIRA MACIÇA • PROJETOS SOB MEDIDA
               </p>
               <h1>
-                Seu espaço.
-                <br />
-                Sua identidade.
-                <br />
-                <em>Madeira maciça.</em>
+                Seu espaço merece a autenticidade da <em>madeira maciça.</em>
               </h1>
               <p className="hero-description">
-                Marcenaria sob medida para quem valoriza a beleza do material e
-                o cuidado em cada detalhe.
+                Criamos projetos sob medida que unem beleza natural,
+                funcionalidade e personalidade. Cada detalhe pensado para
+                transformar sua ideia em algo único.
               </p>
-              <CtaButton variant="light" />
+              <CtaButton variant="light" label="Solicitar meu orçamento" />
               <p className="hero-note">
-                Uma conversa sobre o que você imagina criar.
+                Conte sua ideia e vamos conversar sobre as possibilidades.
               </p>
             </div>
             <div className="hero-bottom">
@@ -124,70 +120,22 @@ export default function App() {
         </div>
         <section className="project shell section" id="projeto">
           <div className="section-top">
-            <p className="eyebrow">01 / A MADEIRA NO AMBIENTE</p>
+            <p className="eyebrow">01 / PORTFÓLIO</p>
             <span className="side-note">UM OLHAR SOBRE O CASARIA CAFÉ</span>
           </div>
           <div className="project-heading">
             <h2>
-              Mais que compor.
-              <br />
-              <em>Dar personalidade.</em>
+              Da madeira à realidade. <em>Conheça nossos projetos.</em>
             </h2>
             <p>
-              Do conjunto aos pequenos detalhes, a madeira traz textura, calor e
-              presença. Um material que participa da experiência do espaço.
+              Cada projeto nasce de uma ideia e ganha forma por meio da escolha
+              dos materiais, do trabalho artesanal e da atenção aos detalhes.
             </p>
           </div>
-          <div className="project-grid">
-            <figure className="project-main">
-              <img
-                src={images.interior.src}
-                alt={images.interior.alt}
-                width="1200"
-                height="1600"
-                loading="lazy"
-              />
-              <figcaption>
-                <span>01 — Interior</span>
-                <span>Madeira e luz</span>
-              </figcaption>
-            </figure>
-            <div className="project-side">
-              <figure>
-                <img
-                  src={images.detalhe.src}
-                  alt={images.detalhe.alt}
-                  width="1200"
-                  height="1600"
-                  loading="lazy"
-                />
-                <figcaption>02 — A textura de perto</figcaption>
-              </figure>
-              <p className="editorial-note">
-                A beleza está
-                <br />
-                no que é <em>natural.</em>
-              </p>
-            </div>
-            <figure className="project-wide">
-              <img
-                src={images.banco.src}
-                alt={images.banco.alt}
-                width="1200"
-                height="1600"
-                loading="lazy"
-              />
-              <figcaption>
-                <span>03 — Banco suspenso e mesa</span>
-                <span>Detalhes que dão identidade</span>
-              </figcaption>
-            </figure>
-          </div>
+          <PhotoGallery />
           <div className="project-link">
-            <p>O que você imagina para o seu espaço?</p>
-            <a href="#contato">
-              Vamos conversar <ArrowUpRight size={18} />
-            </a>
+            <p>Seu projeto também começa com uma ideia.</p>
+            <CtaButton label="Quero um projeto assim" />
           </div>
         </section>
         <section className="essence" id="essencia">
@@ -195,16 +143,8 @@ export default function App() {
             <div>
               <p className="eyebrow">02 / NOSSA ESSÊNCIA</p>
               <h2>
-                O valor está
-                <br />
-                na matéria.
-                <br />
-                <em>E no cuidado.</em>
+                Mais do que madeira. <em>Um projeto com identidade.</em>
               </h2>
-              <p className="essence-intro">
-                Um projeto sob medida começa com escolhas que fazem sentido para
-                você e para o ambiente.
-              </p>
             </div>
             <div className="feature-list">
               {features.map((f, i) => (
@@ -234,11 +174,7 @@ export default function App() {
           <div className="process-copy">
             <p className="eyebrow">03 / COMO FUNCIONA</p>
             <h2>
-              Uma boa execução
-              <br />
-              começa com uma
-              <br />
-              <em>boa conversa.</em>
+              Sua ideia merece <em>ganhar forma.</em>
             </h2>
             <ol>
               {steps.map((s) => (
@@ -251,11 +187,12 @@ export default function App() {
                 </li>
               ))}
             </ol>
+            <CtaButton label="Conversar sobre meu projeto" />
           </div>
         </section>
         <section className="faq shell">
           <div>
-            <p className="eyebrow">ANTES DE COMEÇAR</p>
+            <p className="eyebrow">DÚVIDAS FREQUENTES</p>
             <h2>
               Vamos aos
               <br />
@@ -282,17 +219,18 @@ export default function App() {
           <div className="shell contact-inner">
             <p className="eyebrow">SEU PRÓXIMO PROJETO</p>
             <h2>
-              Uma ideia sua.
-              <br />
-              <em>Um espaço com identidade.</em>
+              Sua ideia. Nossa madeira. <em>Um projeto único.</em>
             </h2>
             <p>
-              Compartilhe suas referências. Vamos conversar sobre as
-              possibilidades em madeira maciça.
+              Tem algo em mente? Conte para a Projeto Raiz o que você deseja
+              criar. Vamos conversar sobre as possibilidades para o seu espaço.
             </p>
-            <CtaButton variant="light" />
+            <CtaButton
+              variant="light"
+              label="Solicitar orçamento pelo WhatsApp"
+            />
             <span className="contact-note">
-              Para começar: sua ideia, medidas aproximadas e cidade.
+              O primeiro passo é uma boa conversa.
             </span>
           </div>
         </section>
@@ -306,6 +244,13 @@ export default function App() {
           VOLTAR AO TOPO <ArrowUpRight size={15} />
         </a>
       </footer>
+      <div className="mobile-whatsapp">
+        <CtaButton
+          className="cta-floating"
+          label="Solicitar orçamento pelo WhatsApp"
+          iconOnly
+        />
+      </div>
     </>
   );
 }
