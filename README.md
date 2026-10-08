@@ -26,3 +26,7 @@ A composição está em `src/App.tsx`; os estilos responsivos em `src/styles.css
 Confirmar com o cliente quais elementos do Casaria foram executados pela marcenaria e preencher o WhatsApp. A página usa legendas descritivas, sem alegar autoria arquitetônica, cobertura da empresa na imprensa ou identidade de pessoas retratadas.
 
 O projeto foi convertido de TanStack Start para uma LP estática. Rotas e dependências não utilizadas da exportação foram removidas.
+
+## Galeria e conversão
+
+As fotografias do portfólio podem ser ampliadas. A galeria aceita setas do teclado, Escape e botões de navegação, devolvendo o foco à foto ao fechar. O botão flutuante de contato aparece no mobile e usa a mesma configuração de WhatsApp dos demais CTAs.

@@ -1,20 +1,28 @@
 import { useState } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, MessageCircle } from "lucide-react";
 import { CTA_LABEL, whatsappUrl } from "../config/site";
 export function CtaButton({
   className = "",
   variant = "solid",
+  label = CTA_LABEL,
+  iconOnly = false,
 }: {
   className?: string;
   variant?: "solid" | "outline" | "light";
-  arrow?: boolean;
+  label?: string;
+  iconOnly?: boolean;
 }) {
   const [notice, setNotice] = useState(false);
   const url = whatsappUrl();
   const cls = `cta cta-${variant} ${className}`;
-  const content = (
+  const content = iconOnly ? (
     <>
-      {CTA_LABEL}
+      <MessageCircle size={25} aria-hidden="true" />
+      <span className="sr-only">{label}</span>
+    </>
+  ) : (
+    <>
+      {label}
       <ArrowUpRight size={19} aria-hidden="true" />
     </>
   );
@@ -26,7 +34,7 @@ export function CtaButton({
     );
   return (
     <span className="cta-wrap">
-      <button type="button" className={cls} onClick={() => setNotice(true)}>
+      <button type="button" className={cls} onClick={() => setNotice(!notice)}>
         {content}
       </button>
       {notice && (
