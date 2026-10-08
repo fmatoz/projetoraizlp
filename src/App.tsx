@@ -58,6 +58,7 @@ export default function App() {
               className="nav-contact"
               variant="outline"
               label="Solicitar orçamento"
+              placement="header"
             />
           </nav>
           <button
@@ -85,20 +86,22 @@ export default function App() {
           </div>
           <div className="shell hero-inner">
             <div className="hero-copy">
-              <p className="eyebrow">
-                MARCENARIA EM MADEIRA MACIÇA • PROJETOS SOB MEDIDA
-              </p>
+              <p className="eyebrow">PROJETOS SOB MEDIDA • SÃO PAULO</p>
               <h1>
-                Seu espaço merece a autenticidade da <em>madeira maciça.</em>
+                Marcenaria em madeira maciça para espaços que merecem{" "}
+                <em>ser únicos.</em>
               </h1>
               <p className="hero-description">
-                Criamos projetos sob medida que unem beleza natural,
-                funcionalidade e personalidade. Cada detalhe pensado para
-                transformar sua ideia em algo único.
+                Criamos projetos sob medida que combinam a beleza natural da
+                madeira, funcionalidade e acabamentos cuidadosamente executados.
               </p>
-              <CtaButton variant="light" label="Solicitar meu orçamento" />
+              <CtaButton
+                variant="light"
+                label="Solicitar orçamento no WhatsApp"
+                placement="hero"
+              />
               <p className="hero-note">
-                Conte sua ideia e vamos conversar sobre as possibilidades.
+                Conte sua ideia e vamos conversar sobre o seu projeto.
               </p>
             </div>
             <div className="hero-bottom">
@@ -121,11 +124,11 @@ export default function App() {
         <section className="project shell section" id="projeto">
           <div className="section-top">
             <p className="eyebrow">01 / PORTFÓLIO</p>
-            <span className="side-note">UM OLHAR SOBRE O CASARIA CAFÉ</span>
+            <span className="side-note">EM DESTAQUE / CASARIA CAFÉ</span>
           </div>
           <div className="project-heading">
             <h2>
-              Da madeira à realidade. <em>Conheça nossos projetos.</em>
+              Projetos que transformam ideias em <em>espaços únicos.</em>
             </h2>
             <p>
               Cada projeto nasce de uma ideia e ganha forma por meio da escolha
@@ -135,7 +138,7 @@ export default function App() {
           <PhotoGallery />
           <div className="project-link">
             <p>Seu projeto também começa com uma ideia.</p>
-            <CtaButton label="Quero um projeto assim" />
+            <CtaButton label="Quero um projeto assim" placement="portfolio" />
           </div>
         </section>
         <section className="essence" id="essencia">
@@ -187,7 +190,10 @@ export default function App() {
                 </li>
               ))}
             </ol>
-            <CtaButton label="Conversar sobre meu projeto" />
+            <CtaButton
+              label="Conversar sobre meu projeto"
+              placement="process"
+            />
           </div>
         </section>
         <section className="faq shell">
@@ -228,6 +234,7 @@ export default function App() {
             <CtaButton
               variant="light"
               label="Solicitar orçamento pelo WhatsApp"
+              placement="final"
             />
             <span className="contact-note">
               O primeiro passo é uma boa conversa.
@@ -248,6 +255,7 @@ export default function App() {
         <CtaButton
           className="cta-floating"
           label="Solicitar orçamento pelo WhatsApp"
+          placement="mobile_floating"
           iconOnly
         />
       </div>
