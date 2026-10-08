@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useScrollReveal } from "./hooks/useScrollReveal";
 import { ArrowDown, ArrowUpRight, Menu, X, Plus } from "lucide-react";
 import { GoogleReviews } from "./components/GoogleReviews";
 import { PhotoGallery } from "./components/PhotoGallery";
@@ -30,6 +31,7 @@ function Brand() {
 }
 
 export default function App() {
+  useScrollReveal();
   const [menu, setMenu] = useState(false);
   return (
     <>
@@ -264,6 +266,7 @@ export default function App() {
     </>
   );
 }
+
 
 
 

@@ -2052,3 +2052,13 @@ details > p {
 .footer-credit p { margin: 0; }
 .footer-credit > span, .footer-credit > a { font-size: 11px; color: #69715f; }
 .footer-credit > a:hover { color: #263223; text-decoration: underline; text-underline-offset: 4px; }
+
+/* Subtle entrance on scroll; layout remains stable throughout. */
+.reveal-pending { opacity: 0; transform: translateY(22px); }
+.is-revealed { animation: scroll-reveal 650ms cubic-bezier(.22, 1, .36, 1) both; animation-delay: var(--reveal-delay, 0ms); }
+@keyframes scroll-reveal { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 760px) { .is-revealed { animation-duration: 500ms; } }
+@media (prefers-reduced-motion: reduce) {
+  .reveal-pending { opacity: 1; transform: none; }
+  .is-revealed { animation: none; }
+}
