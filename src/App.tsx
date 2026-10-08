@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowDown, ArrowUpRight, Menu, X, Plus } from "lucide-react";
+import { GoogleReviews } from "./components/GoogleReviews";
 import { PhotoGallery } from "./components/PhotoGallery";
 import { CtaButton } from "./components/CtaButton";
 import { images, steps, features } from "./config/site";
@@ -196,6 +197,7 @@ export default function App() {
             />
           </div>
         </section>
+        <GoogleReviews />
         <section className="faq shell">
           <div>
             <p className="eyebrow">DÚVIDAS FREQUENTES</p>
@@ -262,3 +264,4 @@ export default function App() {
     </>
   );
 }
+
