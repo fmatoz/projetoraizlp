@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER: string = "";
+export const WHATSAPP_NUMBER: string = "5511974779874";
 export const WHATSAPP_MESSAGE =
   "Olá! Conheci os projetos da Projeto Raiz e gostaria de solicitar um orçamento.";
 export const CTA_LABEL = "Solicitar meu orçamento";
@@ -61,3 +61,4 @@ export const steps = [
     text: "Com o projeto alinhado, seguimos para a execução conforme as condições combinadas.",
   },
 ];
+
