@@ -2014,3 +2014,12 @@ details > p {
 
 .cta-floating { width: 52px; height: 52px; min-height: 52px; padding: 0; gap: 0; }
 .cta-floating svg { flex-shrink: 0; }
+
+/* Keep portfolio photographs in their original proportions. */
+.carousel-track { align-items: flex-start; }
+.carousel-slide { flex-basis: 34%; }
+.carousel-slide .gallery-photo { height: auto; }
+.carousel-slide .gallery-photo img { width: 100%; height: auto; object-fit: contain; transform: none; }
+.carousel-slide .gallery-photo:hover img { transform: none; }
+@media (max-width: 1000px) { .carousel-slide { flex-basis: 46%; } }
+@media (max-width: 760px) { .carousel-slide { flex-basis: 86%; } }
