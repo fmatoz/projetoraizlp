@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useScrollReveal } from "./hooks/useScrollReveal";
 import { ArrowDown, ArrowUpRight, Menu, X, Plus } from "lucide-react";
 import { GoogleReviews } from "./components/GoogleReviews";
-import { PhotoGallery } from "./components/PhotoGallery";
+import { ProjectStories } from "./components/ProjectStories";
 import { CtaButton } from "./components/CtaButton";
 import { images, steps, features } from "./config/site";
 
@@ -127,18 +127,18 @@ export default function App() {
         <section className="project shell section" id="projeto">
           <div className="section-top">
             <p className="eyebrow">01 / PORTFÓLIO</p>
-            <span className="side-note">EM DESTAQUE / CASARIA CAFÉ</span>
+            <span className="side-note">CASARIA CAFÉ / LEVENA</span>
           </div>
           <div className="project-heading">
             <h2>
               Projetos que transformam ideias em <em>espaços únicos.</em>
             </h2>
             <p>
-              Cada projeto nasce de uma ideia e ganha forma por meio da escolha
-              dos materiais, do trabalho artesanal e da atenção aos detalhes.
+              Acompanhe a evolução de dois projetos, da execução ao ambiente pronto. Veja a escolha
+              dos materiais, o trabalho artesanal e a atenção aos detalhes em cada etapa.
             </p>
           </div>
-          <PhotoGallery />
+          <ProjectStories />
           <div className="project-link">
             <p>Seu projeto também começa com uma ideia.</p>
             <CtaButton label="Quero um projeto assim" placement="portfolio" />
@@ -266,6 +266,8 @@ export default function App() {
     </>
   );
 }
+
+
 
 
 
