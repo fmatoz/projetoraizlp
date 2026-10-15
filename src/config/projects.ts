@@ -9,18 +9,18 @@ export const projects = [
         "description": "O balcão ganha forma no ambiente, antes dos detalhes finais.",
         "photos": [
           {
-            "src": "/images/projects/casaria-1-06.webp",
-            "alt": "Balcão durante a montagem no interior — Casaria Café",
-            "caption": "Balcão durante a montagem no interior",
-            "width": 1400,
-            "height": 1050
-          },
-          {
             "src": "/images/projects/casaria-1-03.webp",
             "alt": "Equipe trabalhando na montagem da fachada — Casaria Café",
             "caption": "Equipe trabalhando na montagem da fachada",
             "width": 1200,
             "height": 1600
+          },
+          {
+            "src": "/images/projects/casaria-1-06.webp",
+            "alt": "Balcão durante a montagem no interior — Casaria Café",
+            "caption": "Balcão durante a montagem no interior",
+            "width": 1400,
+            "height": 1050
           }
         ]
       },
