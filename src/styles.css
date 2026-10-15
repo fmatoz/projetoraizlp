@@ -2131,3 +2131,10 @@ details > p {
   .story-photo-grid figcaption { font-size: 10px; }
   .project-collection .project-stories + .project-stories { margin-top: 42px; padding-top: 32px; }
 }
+.project-collection .story-stages { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 26px; align-items: start; }
+.project-collection .story-stage + .story-stage { margin-top: 0; }
+.story-photo-grid { grid-template-columns: 1fr; gap: 22px; }
+@media(max-width:760px) {
+  .project-collection .story-stages { grid-template-columns: 1fr; gap: 30px; }
+  .story-photo-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+}
