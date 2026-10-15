@@ -2103,3 +2103,38 @@ details > p {
   .story-hint { font-size: 0; }
   .story-hint:after { content: "Acompanhe as etapas de cima para baixo. Toque nas fotos para ampliar os registros."; font-size: 11px; }
 }
+
+/* Every project and progress photograph is visible without switching views. */
+.project-jump-links { display: flex; gap: 12px; margin: 28px 0 40px; flex-wrap: wrap; }
+.project-jump-links a { border: 1px solid #ccd4c2; border-radius: 14px; padding: 15px 20px; display: flex; gap: 22px; align-items: center; font-size: 14px; }
+.project-jump-links a:hover { background: #e9eddf; }
+.project-jump-links span { display: flex; align-items: center; gap: 5px; font-size: 10px; color: #63705a; }
+.project-collection .project-stories + .project-stories { margin-top: 68px; padding-top: 44px; border-top: 1px solid #c9d1bf; }
+.project-collection .story-stages { display: block; }
+.project-collection .story-stage + .story-stage { margin-top: 30px; }
+.project-collection .story-step { padding-bottom: 8px; }
+.project-collection .story-stage > p { min-height: 0; margin: 4px 0 20px; }
+.story-photo-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 18px; align-items: start; }
+.story-photo-grid figure { margin: 0; min-width: 0; }
+.story-photo { display: block; position: relative; width: 100%; border: 0; padding: 0; border-radius: 18px; overflow: hidden; background: transparent; }
+.story-photo img { width: 100%; height: auto; object-fit: contain; }
+.story-photo .gallery-expand { bottom: 10px; right: 10px; padding: 8px 10px; font-size: 10px; }
+.story-photo-grid figcaption { font-size: 11px; line-height: 1.5; color: #69745f; margin-top: 10px; }
+@media(max-width:1000px) { .story-photo-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; } }
+@media(max-width:760px) {
+  .project-jump-links { gap: 8px; margin-bottom: 30px; }
+  .project-jump-links a { flex: 1; padding: 13px; justify-content: center; font-size: 13px; }
+  .project-jump-links span { display: none; }
+  .story-photo-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+  .story-photo { border-radius: 12px; }
+  .story-photo .gallery-expand { display: none; }
+  .story-photo-grid figcaption { font-size: 10px; }
+  .project-collection .project-stories + .project-stories { margin-top: 42px; padding-top: 32px; }
+}
+.project-collection .story-stages { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 26px; align-items: start; }
+.project-collection .story-stage + .story-stage { margin-top: 0; }
+.story-photo-grid { grid-template-columns: 1fr; gap: 22px; }
+@media(max-width:760px) {
+  .project-collection .story-stages { grid-template-columns: 1fr; gap: 30px; }
+  .story-photo-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+}
