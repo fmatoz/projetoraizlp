@@ -45,7 +45,12 @@ function ProjectStory({ project }: { project: (typeof projects)[number] }) {
 }
 
 export function ProjectStories() {
+  const [active, setActive] = useState(0);
+  const project = projects[active];
   return <div className="project-collection">
-    <nav className="project-jump-links" aria-label="Projetos apresentados">{projects.map(project => <a href={`#projeto-${project.id}`} key={project.id}>{project.name}<span><Check size={13} aria-hidden="true"/> Finalizado</span></a>)}</nav>
-    {projects.map(project => <ProjectStory key={project.id} project={project}/>)}</div>;
+    <div className="project-selector" role="group" aria-label="Escolha um projeto">
+      {projects.map((item, index) => <button type="button" key={item.id} aria-pressed={active === index} aria-controls="selected-project" onClick={() => setActive(index)}><span className="project-selector-number">0{index + 1}</span>{item.name}<span className="project-selector-status"><Check size={13} aria-hidden="true"/> Finalizado</span></button>)}
+    </div>
+    <div id="selected-project"><ProjectStory key={project.id} project={project}/></div>
+  </div>;
 }
