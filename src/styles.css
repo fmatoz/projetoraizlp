@@ -2062,3 +2062,44 @@ details > p {
   .reveal-pending { opacity: 1; transform: none; }
   .is-revealed { animation: none; }
 }
+
+/* Project stories: original photos, organized by evidenced stages. */
+.project-selector { display: flex; gap: 12px; margin: 32px 0; }
+.project-selector > button { display: flex; align-items: center; gap: 14px; padding: 17px 22px; border: 1px solid #d0d7c8; border-radius: 16px; background: transparent; color: var(--ink); font-weight: 600; transition: background .2s, color .2s; }
+.project-selector > button[aria-pressed="true"] { background: #263223; color: #fff; border-color: #263223; }
+.project-selector-number { font-size: 11px; opacity: .6; }
+.project-selector-status { display: flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 400; opacity: .8; }
+.story-intro { display: flex; justify-content: space-between; align-items: center; gap: 40px; margin: 0 0 28px; }
+.story-intro .eyebrow { font-size: 10px; margin-bottom: 9px; }
+.story-intro h3 { font-size: 38px; margin: 0; }
+.story-intro > p { max-width: 480px; font-size: 14px; line-height: 1.7; margin: 0; color: #66705c; }
+.story-stages { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 25px; }
+.story-step { display: flex; gap: 12px; align-items: center; border-top: 1px solid #cfd5c6; padding: 20px 0; }
+.story-step > span { width: 30px; height: 30px; border-radius: 50%; background: #e5e9dc; display: grid; place-items: center; font-size: 11px; flex-shrink: 0; }
+.story-step h4 { font-size: 18px; font-weight: 500; margin: 0; }
+.story-cover { width: 100%; aspect-ratio: 3/4; position: relative; overflow: hidden; border: 1px solid #dce0d4; border-radius: 22px; padding: 0; background: #e9e9df; display: flex; align-items: center; justify-content: center; }
+.story-cover img { width: 100%; height: 100%; object-fit: contain; }
+.story-cover .gallery-expand { bottom: 14px; right: 14px; font-size: 10px; }
+.story-stage > p { font-size: 13px; line-height: 1.7; min-height: 44px; color: #626c58; margin: 16px 0; }
+.story-thumbnails { display: flex; gap: 8px; }
+.story-thumbnails button { width: 54px; height: 66px; border: 1px solid #d2d8c9; padding: 2px; border-radius: 8px; background: #e9e9df; overflow: hidden; }
+.story-thumbnails img { object-fit: contain; border-radius: 5px; }
+.story-thumbnails button:hover { border-color: #405238; }
+.story-hint { font-size: 11px; color: #707864; margin: 22px 0 0; }
+.story-lightbox .lightbox-controls strong { font-size: 12px; font-weight: 600; }
+.project-stories button:focus-visible { outline: 3px solid #a18b4c; outline-offset: 4px; }
+@media(max-width: 1000px) { .story-stages { gap: 16px; } .project-selector-status { display: none; } .story-step h4 { font-size: 15px; } }
+@media(max-width: 760px) {
+  .project-selector { gap: 10px; margin: 25px 0; }
+  .project-selector > button { padding: 15px 14px; font-size: 13px; gap: 9px; flex: 1; justify-content: center; border-radius: 13px; }
+  .story-intro { flex-direction: column; align-items: flex-start; gap: 12px; margin-bottom: 24px; }
+  .story-intro h3 { font-size: 34px; }
+  .story-intro > p { font-size: 13px; }
+  .story-stages { grid-template-columns: 1fr; gap: 28px; }
+  .story-step { padding: 15px 0; }
+  .story-step h4 { font-size: 20px; }
+  .story-cover { max-height: 540px; border-radius: 18px; }
+  .story-stage > p { min-height: 0; }
+  .story-hint { font-size: 0; }
+  .story-hint:after { content: "Acompanhe as etapas de cima para baixo. Toque nas fotos para ampliar os registros."; font-size: 11px; }
+}

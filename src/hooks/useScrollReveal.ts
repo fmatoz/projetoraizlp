@@ -4,7 +4,7 @@ export function useScrollReveal() {
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
     const elements = Array.from(document.querySelectorAll<HTMLElement>(
-      ".material-strip, .project-heading, .carousel, .project-link, .essence-grid > div:first-child, .feature-list article, .process-photo, .process-copy, .reviews-heading, .review-card, .reviews-footnote, .faq > div, .contact-inner"
+      ".material-strip, .project-heading, .project-stories, .project-link, .essence-grid > div:first-child, .feature-list article, .process-photo, .process-copy, .reviews-heading, .review-card, .reviews-footnote, .faq > div, .contact-inner"
     ));
     const reveal = (element: HTMLElement) => {
       element.classList.add("is-revealed");
@@ -54,3 +54,4 @@ export function useScrollReveal() {
     };
   }, []);
 }
+
