@@ -182,7 +182,7 @@ export const projects: Project[] = [
   },
   {
     "id": "plow",
-    "name": "Plow Hamburguer",
+    "name": "Pibus Hamburguer",
     "status": "Em andamento",
     "summary": "Retrofit em andamento: a renovação do mobiliário e dos revestimentos de madeira, do ambiente existente à instalação das novas peças.",
     "stages": [
@@ -192,21 +192,21 @@ export const projects: Project[] = [
         "photos": [
           {
             "src": "/images/projects/plow-1-10.webp",
-            "alt": "Vista do salão antes do retrofit — Plow Hamburguer",
+            "alt": "Vista do salão antes do retrofit — Pibus Hamburguer",
             "caption": "Vista do salão antes do retrofit",
             "width": 1200,
             "height": 1600
           },
           {
             "src": "/images/projects/plow-1-02.webp",
-            "alt": "Banco existente antes da intervenção — Plow Hamburguer",
+            "alt": "Banco existente antes da intervenção — Pibus Hamburguer",
             "caption": "Banco existente antes da intervenção",
             "width": 720,
             "height": 1600
           },
           {
             "src": "/images/projects/plow-1-07.webp",
-            "alt": "Mesas e bancos antes da renovação — Plow Hamburguer",
+            "alt": "Mesas e bancos antes da renovação — Pibus Hamburguer",
             "caption": "Mesas e bancos antes da renovação",
             "width": 1400,
             "height": 630
@@ -219,28 +219,28 @@ export const projects: Project[] = [
         "photos": [
           {
             "src": "/images/projects/plow-2-29.webp",
-            "alt": "Peças e estruturas de madeira durante a preparação — Plow Hamburguer",
+            "alt": "Peças e estruturas de madeira durante a preparação — Pibus Hamburguer",
             "caption": "Peças e estruturas de madeira durante a preparação",
             "width": 1200,
             "height": 1600
           },
           {
             "src": "/images/projects/plow-2-28.webp",
-            "alt": "Estruturas de bancos em montagem na marcenaria — Plow Hamburguer",
+            "alt": "Estruturas de bancos em montagem na marcenaria — Pibus Hamburguer",
             "caption": "Estruturas de bancos em montagem na marcenaria",
             "width": 1200,
             "height": 1600
           },
           {
             "src": "/images/projects/plow-2-27.webp",
-            "alt": "Banco com assento durante a preparação — Plow Hamburguer",
+            "alt": "Banco com assento durante a preparação — Pibus Hamburguer",
             "caption": "Banco com assento durante a preparação",
             "width": 1200,
             "height": 1600
           },
           {
             "src": "/images/projects/plow-2-31.webp",
-            "alt": "Tampo de madeira com acabamento em preparação — Plow Hamburguer",
+            "alt": "Tampo de madeira com acabamento em preparação — Pibus Hamburguer",
             "caption": "Tampo de madeira com acabamento em preparação",
             "width": 899,
             "height": 1599
@@ -260,28 +260,28 @@ export const projects: Project[] = [
         "photos": [
           {
             "src": "/images/projects/plow-3-15.webp",
-            "alt": "Instalação do revestimento de madeira na parede — Plow Hamburguer",
+            "alt": "Instalação do revestimento de madeira na parede — Pibus Hamburguer",
             "caption": "Instalação do revestimento de madeira na parede",
             "width": 1200,
             "height": 1600
           },
           {
             "src": "/images/projects/plow-3-13.webp",
-            "alt": "Revestimento e peças durante a montagem no salão — Plow Hamburguer",
+            "alt": "Revestimento e peças durante a montagem no salão — Pibus Hamburguer",
             "caption": "Revestimento e peças durante a montagem no salão",
             "width": 1200,
             "height": 1600
           },
           {
             "src": "/images/projects/plow-3-18.webp",
-            "alt": "Estrutura do banco durante a instalação — Plow Hamburguer",
+            "alt": "Estrutura do banco durante a instalação — Pibus Hamburguer",
             "caption": "Estrutura do banco durante a instalação",
             "width": 1200,
             "height": 1600
           },
           {
             "src": "/images/projects/plow-3-21.webp",
-            "alt": "Fixação do acabamento junto à janela — Plow Hamburguer",
+            "alt": "Fixação do acabamento junto à janela — Pibus Hamburguer",
             "caption": "Fixação do acabamento junto à janela",
             "width": 1200,
             "height": 1600
@@ -301,15 +301,15 @@ export const projects: Project[] = [
         "photos": [
           {
             "src": "/images/projects/plow-4-20.webp",
-            "alt": "Novos tampos e bancos no ambiente durante o retrofit — Plow Hamburguer",
+            "alt": "Novos tampos e bancos no ambiente durante o retrofit — Pibus Hamburguer",
             "caption": "Novos tampos e bancos no ambiente durante o retrofit",
             "width": 1200,
             "height": 1600
           },
           {
             "src": "/images/projects/plow-4-23.webp",
-            "alt": "Fachada da Plow Hamburguer durante os trabalhos — Plow Hamburguer",
-            "caption": "Fachada da Plow Hamburguer durante os trabalhos",
+            "alt": "Fachada da Pibus Hamburguer durante os trabalhos — Pibus Hamburguer",
+            "caption": "Fachada da Pibus Hamburguer durante os trabalhos",
             "width": 1200,
             "height": 1600
           }
