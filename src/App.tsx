@@ -129,7 +129,7 @@ export default function App() {
         <section className="project shell section" id="projeto">
           <div className="section-top">
             <p className="eyebrow">01 / PORTFÓLIO</p>
-            <span className="side-note">CASARIA CAFÉ / LEVENA / PLOW HAMBURGUER</span>
+            <span className="side-note">CASARIA CAFÉ / LEVENA / PIBUS HAMBURGUER</span>
           </div>
           <div className="project-heading">
             <h2>
