@@ -6,8 +6,9 @@ export function OwnerProfile() {
     <div className="owner-copy">
       <p className="eyebrow">CONHEÇA QUEM ESTÁ À FRENTE</p>
       <h2 id="owner-title">Valdemar.<br/><em>O nome por trás da Projeto Raiz.</em></h2>
-      <p>À frente da Projeto Raiz, Valdemar é o proprietário da marcenaria que dá forma a projetos sob medida em madeira maciça.</p>
-      <p>Os trabalhos que você conhece por aqui mostram a madeira em diferentes espaços e etapas. Agora, o próximo passo pode ser uma conversa sobre o que você deseja criar.</p>
+      <p>Foi Raimunda, sua mãe, quem apresentou a marcenaria a Valdemar. Em 1987, ela o levou ao Liceu de Artes e Ofícios, no Pelourinho, em Salvador. No ano seguinte, ele começou sua formação no ofício.</p>
+      <p>A trajetória seguiu por outras marcenarias e, a partir de 1993, também pelo Exército, onde trabalhou na área e aprendeu com outros profissionais.</p>
+      <p>Já em São Paulo, depois de atuar também em outros setores, Valdemar retomou a dedicação integral à marcenaria em 2019. Hoje, à frente da Projeto Raiz e com sua equipe, desenvolve projetos em madeira maciça, da criação de novos ambientes à renovação de espaços existentes.</p>
       <div className="owner-signoff"><strong>Valdemar</strong><span>PROPRIETÁRIO · PROJETO RAIZ</span></div>
       <CtaButton label="Conversar sobre meu projeto" placement="owner"/>
     </div>

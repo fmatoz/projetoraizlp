@@ -2170,3 +2170,8 @@ details > p {
 .owner-signoff strong { font-family: Georgia,serif; font-size: 24px; font-weight: 400; }
 .owner-signoff span { font-size: 9px; letter-spacing: .16em; color: #6b735f; }
 @media(max-width:760px) { .owner-section { grid-template-columns: 1fr; gap: 28px; padding-block: 40px; } .owner-photo { max-width: 440px; width: 100%; margin-inline: auto; } .owner-photo img { border-radius: 18px; } .owner-copy h2 { font-size: 38px; } .owner-copy > p:not(.eyebrow) { font-size: 14px; } }
+
+.audience-note { text-align: center; padding-top: 30px; }
+.audience-note p { margin: 0 0 10px; font-size: 9px; letter-spacing: .18em; color: #68765b; }
+.audience-note span { display: block; font-size: 13px; line-height: 1.8; color: #536148; }
+@media(max-width:760px) { .audience-note { padding-top: 24px; } .audience-note span { font-size: 12px; } }
