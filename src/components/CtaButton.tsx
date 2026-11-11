@@ -13,7 +13,7 @@ export function CtaButton({
   label?: string;
   iconOnly?: boolean;
   placement:
-    "header" | "hero" | "portfolio" | "process" | "final" | "mobile_floating";
+    "header" | "hero" | "portfolio" | "process" | "owner" | "final" | "mobile_floating";
 }) {
   const [notice, setNotice] = useState(false);
   const url = whatsappUrl();

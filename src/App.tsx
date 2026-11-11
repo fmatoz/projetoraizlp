@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useScrollReveal } from "./hooks/useScrollReveal";
 import { ArrowDown, ArrowUpRight, Menu, X, Plus } from "lucide-react";
+import { OwnerProfile } from "./components/OwnerProfile";
 import { GoogleReviews } from "./components/GoogleReviews";
 import { ProjectStories } from "./components/ProjectStories";
 import { CtaButton } from "./components/CtaButton";
@@ -199,6 +200,7 @@ export default function App() {
             />
           </div>
         </section>
+        <OwnerProfile />
         <GoogleReviews />
         <section className="faq shell">
           <div>
