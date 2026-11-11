@@ -127,14 +127,14 @@ export default function App() {
         <section className="project shell section" id="projeto">
           <div className="section-top">
             <p className="eyebrow">01 / PORTFÓLIO</p>
-            <span className="side-note">CASARIA CAFÉ / LEVENA</span>
+            <span className="side-note">CASARIA CAFÉ / LEVENA / PLOW HAMBURGUER</span>
           </div>
           <div className="project-heading">
             <h2>
               Projetos que transformam ideias em <em>espaços únicos.</em>
             </h2>
             <p>
-              Acompanhe a evolução de dois projetos, da execução ao ambiente pronto. Veja a escolha
+              Conheça projetos finalizados e um retrofit em andamento. Acompanhe a escolha
               dos materiais, o trabalho artesanal e a atenção aos detalhes em cada etapa.
             </p>
           </div>
