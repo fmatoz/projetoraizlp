@@ -10,7 +10,7 @@ import { images, steps, features } from "./config/site";
 const questions = [
   [
     "Quais tipos de projetos vocês realizam?",
-    "Trabalhamos com projetos personalizados em madeira maciça. Conte sua ideia para avaliarmos as possibilidades.",
+    "Desenvolvemos projetos sob medida em madeira maciça, tanto para novos ambientes quanto para retrofit de espaços existentes. Conte sua ideia para avaliarmos as possibilidades.",
   ],
   [
     "Preciso ter todas as medidas antes de entrar em contato?",
@@ -96,8 +96,8 @@ export default function App() {
                 <em>ser únicos.</em>
               </h1>
               <p className="hero-description">
-                Criamos projetos sob medida que combinam a beleza natural da
-                madeira, funcionalidade e acabamentos cuidadosamente executados.
+                Da escolha da madeira à execução, criamos projetos sob medida
+                para novos ambientes e retrofit de espaços existentes.
               </p>
               <CtaButton
                 variant="light"
@@ -125,6 +125,7 @@ export default function App() {
           <i />
           <span>ATENÇÃO AOS DETALHES</span>
         </div>
+        <div className="audience-note shell"><p>MADEIRA MACIÇA PARA O SEU PROJETO</p><span>Arquitetura e engenharia · Construtoras · Hotéis e pousadas · Condomínios de alto padrão</span></div>
         <section className="project shell section" id="projeto">
           <div className="section-top">
             <p className="eyebrow">01 / PORTFÓLIO</p>
