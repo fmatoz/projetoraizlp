@@ -1,4 +1,7 @@
-export const projects = [
+export interface ProjectPhoto { src: string; alt: string; caption: string; width: number; height: number; }
+export interface ProjectVideo { src: string; caption: string; poster: string; }
+export interface Project { id: string; name: string; status: "Finalizado" | "Em andamento"; summary: string; stages: { title: string; description: string; photos: ProjectPhoto[]; videos?: ProjectVideo[]; }[]; }
+export const projects: Project[] = [
   {
     "id": "casaria",
     "name": "Casaria Café",
@@ -78,7 +81,8 @@ export const projects = [
           }
         ]
       }
-    ]
+    ],
+    "status": "Finalizado"
   },
   {
     "id": "levena",
@@ -168,6 +172,144 @@ export const projects = [
             "src": "/images/projects/levena-3-44.webp",
             "alt": "Mobiliário no ambiente finalizado — Levena",
             "caption": "Mobiliário no ambiente finalizado",
+            "width": 1200,
+            "height": 1600
+          }
+        ]
+      }
+    ],
+    "status": "Finalizado"
+  },
+  {
+    "id": "plow",
+    "name": "Plow Hamburguer",
+    "status": "Em andamento",
+    "summary": "Retrofit em andamento: a renovação do mobiliário e dos revestimentos de madeira, do ambiente existente à instalação das novas peças.",
+    "stages": [
+      {
+        "title": "Antes do retrofit",
+        "description": "O ambiente e o mobiliário existentes, registrados antes da renovação.",
+        "photos": [
+          {
+            "src": "/images/projects/plow-1-10.webp",
+            "alt": "Vista do salão antes do retrofit — Plow Hamburguer",
+            "caption": "Vista do salão antes do retrofit",
+            "width": 1200,
+            "height": 1600
+          },
+          {
+            "src": "/images/projects/plow-1-02.webp",
+            "alt": "Banco existente antes da intervenção — Plow Hamburguer",
+            "caption": "Banco existente antes da intervenção",
+            "width": 720,
+            "height": 1600
+          },
+          {
+            "src": "/images/projects/plow-1-07.webp",
+            "alt": "Mesas e bancos antes da renovação — Plow Hamburguer",
+            "caption": "Mesas e bancos antes da renovação",
+            "width": 1400,
+            "height": 630
+          }
+        ]
+      },
+      {
+        "title": "Preparação das peças",
+        "description": "Estruturas, tampos e bancos preparados na marcenaria para a renovação do espaço.",
+        "photos": [
+          {
+            "src": "/images/projects/plow-2-29.webp",
+            "alt": "Peças e estruturas de madeira durante a preparação — Plow Hamburguer",
+            "caption": "Peças e estruturas de madeira durante a preparação",
+            "width": 1200,
+            "height": 1600
+          },
+          {
+            "src": "/images/projects/plow-2-28.webp",
+            "alt": "Estruturas de bancos em montagem na marcenaria — Plow Hamburguer",
+            "caption": "Estruturas de bancos em montagem na marcenaria",
+            "width": 1200,
+            "height": 1600
+          },
+          {
+            "src": "/images/projects/plow-2-27.webp",
+            "alt": "Banco com assento durante a preparação — Plow Hamburguer",
+            "caption": "Banco com assento durante a preparação",
+            "width": 1200,
+            "height": 1600
+          },
+          {
+            "src": "/images/projects/plow-2-31.webp",
+            "alt": "Tampo de madeira com acabamento em preparação — Plow Hamburguer",
+            "caption": "Tampo de madeira com acabamento em preparação",
+            "width": 899,
+            "height": 1599
+          }
+        ],
+        "videos": [
+          {
+            "src": "/videos/projects/plow-preparacao.mp4",
+            "caption": "Preparação de um banco na marcenaria",
+            "poster": "/images/projects/plow-2-27.webp"
+          }
+        ]
+      },
+      {
+        "title": "Instalação no local",
+        "description": "Montagem dos bancos e instalação dos revestimentos de madeira no ambiente existente.",
+        "photos": [
+          {
+            "src": "/images/projects/plow-3-15.webp",
+            "alt": "Instalação do revestimento de madeira na parede — Plow Hamburguer",
+            "caption": "Instalação do revestimento de madeira na parede",
+            "width": 1200,
+            "height": 1600
+          },
+          {
+            "src": "/images/projects/plow-3-13.webp",
+            "alt": "Revestimento e peças durante a montagem no salão — Plow Hamburguer",
+            "caption": "Revestimento e peças durante a montagem no salão",
+            "width": 1200,
+            "height": 1600
+          },
+          {
+            "src": "/images/projects/plow-3-18.webp",
+            "alt": "Estrutura do banco durante a instalação — Plow Hamburguer",
+            "caption": "Estrutura do banco durante a instalação",
+            "width": 1200,
+            "height": 1600
+          },
+          {
+            "src": "/images/projects/plow-3-21.webp",
+            "alt": "Fixação do acabamento junto à janela — Plow Hamburguer",
+            "caption": "Fixação do acabamento junto à janela",
+            "width": 1200,
+            "height": 1600
+          }
+        ],
+        "videos": [
+          {
+            "src": "/videos/projects/plow-instalacao.mp4",
+            "caption": "Registro do ambiente durante a intervenção",
+            "poster": "/images/projects/plow-4-20.webp"
+          }
+        ]
+      },
+      {
+        "title": "Evolução do retrofit",
+        "description": "Os novos elementos já começam a transformar o ambiente. O projeto segue em andamento.",
+        "photos": [
+          {
+            "src": "/images/projects/plow-4-20.webp",
+            "alt": "Novos tampos e bancos no ambiente durante o retrofit — Plow Hamburguer",
+            "caption": "Novos tampos e bancos no ambiente durante o retrofit",
+            "width": 1200,
+            "height": 1600
+          },
+          {
+            "src": "/images/projects/plow-4-23.webp",
+            "alt": "Fachada da Plow Hamburguer durante os trabalhos — Plow Hamburguer",
+            "caption": "Fachada da Plow Hamburguer durante os trabalhos",
             "width": 1200,
             "height": 1600
           }
